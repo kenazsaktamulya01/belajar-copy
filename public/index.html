@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    
+</head>
+<body class="bg-white dark:bg-slate-900 text-black">
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center p-5 bg-white shadow dark:bg-gray-800 dark:text-white dark:hover:text-red-500 transition">
+        <a class="text-xl font-bold text-red-500 dark:text-red-600 dark:hover:text-red-500 transition font-porsche uppercase cursor-pointer" href="https://www.porsche.com/pap/_indonesia_/?cs_redirect=1">porsche</a>
+        
+        <!-- DESKTOP -->
+        <ul class="hidden md:flex space-x-6">
+            <li><a href="#models" class="hover:text-red-500 dark:hover:text-red-500 duration-200 text-black dark:text-white">Models</a></li>
+            <li><a href="#news" class="hover:text-red-500 dark:hover:text-red-500 duration-200 text-black dark:text-white">News</a></li>
+            <li><a href="#story" class="hover:text-red-500 dark:hover:text-red-500 duration-200 text-black dark:text-white">Story</a></li>
+            <li><a href="#championship" class="hover:text-red-500 dark:hover:text-red-500 duration-200 text-black dark:text-white">Championship</a></li>           
+        </ul>
+
+            <!-- BURGER BUTTON -->
+        <button id="burger-btn" class="md:hidden focus:outline-none relative w-6 h-5">
+            <div id="bar1" class="absolute top-1/2 w-6 h-0.5 bg-black transition transform dark:bg-white"></div>
+            <div id="bar2" class="absolute top-1/2 w-6 h-0.5 bg-black transition transform translate-y-2 dark:bg-white"></div>
+            <div id="bar3" class="absolute top-1/2 w-6 h-0.5 bg-black transition transform -translate-y-2 dark:bg-white"></div>
+            
+        </button>
+
+        <!-- MOBILE MENU -->
+        <ul id="mobile-menu" class="hidden flex-col bg-white shadow-md p-5 absolute top-16 left-0 w-full md:hidden dark:bg-gray-800">
+            <li><a href="#" class="hover:text-red-500 dark:hover:text-red-500 duration-200 text-black dark:text-white">Models</a></li>
+            <li><a href="#" class="hover:text-red-500 dark:hover:text-red-500 duration-200 text-black dark:text-white">News</a></li>
+            <li><a href="#" class="hover:text-red-500 dark:hover:text-red-500 duration-200 text-black dark:text-white">Story</a></li>
+            <li><a href="#" class="hover:text-red-500 dark:hover:text-red-500 duration-200 text-black dark:text-white">Certificates</a></li>
+        </ul>
+
+        <div class="flex justify-center space-x-5">
+            <span class="text-sm text-slate-500 mr-2 dark:text-white">Light</span>
+            <input type="checkbox" class="hidden" id="toggle" />
+            <label for="toggle">
+                <div class="w-10 h-6 bg-gray-200 rounded-full p-1 flex items-center dark:bg-gray-500 ">
+                    <div class=" w-4 h-4 bg-red-500 rounded-full shadow-md transform transition-transform duration-300 toggle-circle
+                    dark:bg-gradient-to-r from-red-600 to-red-500"></div>
+                </div>
+            </label>
+            <span class="text-sm text-slate-500 dark:text-white ml-2">Dark</span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative flex flex-col items-center justify-center h-screen dark:bg-black">        
+        <h2 class="absolute text-[10rem] font-porsche font-bold text-red-500 opacity-20  left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 animate-fadeIn duration-500">
+            PORSCHE
+        </h2>
+        
+        <img src="https://www.pngmart.com/files/22/Porsche-911-GT3-RS-PNG-Isolated-Pic.png" 
+            alt="Porsche 911 GT3 RS" 
+            class="relative z-10 w-1/2 hover:scale-125 !important transition duration-300 dark:brightness-75 dark:contrast-125 animate-zoomIn cursor-pointer">  
+        <p class="text-center text-red-500 mt-5 text-3xl font-teko hover:scale-150 hover:text-shadow hover:text-red-500 transition duration-500">
+            Porsche GT3 RS
+        </p>
+    </section>
+    
+
+    <!-- Info Section -->
+    <section class="bg-gray-200 dark:bg-gray-800 p-10 text-center">
+        <div data-aos="zoom-in" class="flex justify-center space-x-10 dark:text-red-700">
+            <div>
+                <h3 class="text-3xl font-bold text-red-500 hover:scale-150 transition duration-200">3.2s</h3>
+                <p>0-100 km/h</p>
+            </div>
+            <div>
+                <h3 class="text-3xl font-bold text-red-500 hover:scale-150 transition duration-200">518 HP</h3>
+                <p>Horsepower</p>
+            </div>
+            <div>
+                <h3 class="text-3xl font-bold text-red-500 hover:scale-150 transition duration-200">296 km/h</h3>
+                <p>Top Speed</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- News Section -->
+    <section id="news" class="bg-white dark:bg-gray-900 p-10" data-aos="fade-up">
+        <h2 class="text-4xl font-bold text-center mb-10 text-red-500 dark:text-red-500 cursor-pointer hover:scale-125 !important transition">Latest News</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="bg-gray-100 dark:bg-gray-700 p-5 rounded-lg shadow-lg hover:scale-110 hover:shadow-red-500 !important transition duration-300">
+                <img src="/public/img/All-New 2025 Porsche 911 GT3 Model Unveiled - FIRST LOOK! | Porsche 911 GT3 2025 Full Review.jpg" alt="Porsche News 1" class="w-full h-40 object-cover rounded-t-lg">
+                <h3 class="text-2xl font-bold mt-5 text-red-500 dark:text-red-500">Porsche Unveils New Model</h3>
+                <p class="mt-2 text-gray-700 dark:text-gray-300">Porsche has unveiled its latest model, featuring cutting-edge technology and design.</p>
+                <a href="#" class="text-red-500 dark:text-red-500shadow-red-500 hover:underline animate-bounce mt-3 block">Read more</a>
+            </div>
+            <div class="bg-gray-100 dark:bg-gray-700 p-5 rounded-lg shadow-lg hover:scale-110 hover:shadow-red-500 !important transition duration-300">
+                <img src="/public/img/7e61963435c46038d9c99b500e684acf.jpg" alt="Porsche News 2" class="w-full h-40 object-cover rounded-t-lg">
+                <h3 class="text-2xl font-bold mt-5 text-red-500 dark:text-red-500">Porsche Wins Award</h3>
+                <p class="mt-2 text-gray-700 dark:text-gray-300">Porsche has been awarded the prestigious Car of the Year award for its innovative design.</p>
+                <a href="#" class="text-red-500 dark:text-red-500shadow-red-500 hover:underline animate-bounce mt-3 block">Read more</a>
+            </div>
+            <div class="bg-gray-100 dark:bg-gray-700 p-5 rounded-lg shadow-lg hover:scale-110 hover:shadow-red-500 !important transition duration-300">
+                <img src="/public/img/image.png" alt="Porsche News 3" class="w-full h-40 object-cover rounded-t-lg">
+                <h3 class="text-2xl font-bold mt-5 text-red-500 dark:text-red-500">Porsche Expands Production</h3>
+                <p class="mt-2 text-gray-700 dark:text-gray-300">Porsche is expanding its production facilities to meet the growing demand for its vehicles.</p>
+                <a href="#" class="text-red-500 dark:text-red-500shadow-red-500 hover:underline animate-bounce mt-3 block">Read more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- STORY SECTION -->
+    <section id="story">
+
+        <div class="container max-w-md lg:max-w-full mx-auto my-10 p-5 flex bg-white shadow-lg dark:bg-gray-800">
+            <div class="lg:p-12 lg:flex-1">
+                <h2 class="text-2xl font-bold sm:mt-8 sm:text-xl mb-4 dark:text-white"> <span class="text-red-600">Porsche</span> 911</h2>
+                        <img src="" alt="" class="w-80 h-80 rounded shadow-md mb-4 sm:mt-6 sm:h-64 sm:w-full sm:object-cover sm:object-center lg:hidden"> 
+                            <h2 class="mt-6 text-2xl font-semibold text-slate-600 dark:text-gray-300 mb-5">Buy This new <span class="font-bebas">Porsche</span> 911</h2>
+                                 <p class="mt-2 text-slate-600 dark:text-gray-300 mb-5 sm:mt-4 sm:text-xl">The Porsche 911 model series (pronounced Nine Eleven or in German: Neunelf) is a family of two-door, high performance rear-engine sports cars, introduced in September 1964 by Porsche AG of Stuttgart, Germany. Now in its eighth generation, all 911s have a rear-mounted flat-six engine, and usually 2+2 seating, except for special 2-seater variants. Originally, 911s had air-cooled engines, and torsion bar suspension, but the 911 has been continuously enhanced, and evolved across generations.</p>
+                                     <a class="animate-bounce bg-red-500 text-white px-4 py-2 rounded hover:bg-red-700 transition duration-300 text-sm sm:text-base" href="#"> Buy Here</a>
+    
+                                
+             </div>
+             <div class="hidden lg:block">
+                <img src="https://i.pinimg.com/474x/3f/df/8f/3fdf8f6def1440a98f0670c548704ccd.jpg" alt="" class="object-cover rounded-tl-full lg:flex-1">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- MODELS -->
+    <section data-aos="zoom-up" id="models" class="bg-gray-200 dark:bg-gray-800 p-10">
+        <h2 class="text-4xl font-bold text-center mb-10 text-red-500 dark:text-red-500 cursor-pointer hover:scale-125 !important transition">Models</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="bg-gray-100 dark:bg-gray-700 p-5 rounded-lg shadow-lg hover:scale-110 hover:shadow-red-500 !important transition duration-300">
+                <img src="/public/img/image copy.png" alt="Porsche News 1" class="w-full h-50 object-cover rounded-t-lg">
+                <h3 class="text-2xl font-bold mt-5 text-red-500 dark:text-red-500">Porsche Unveils New Model</h3>
+                <p class="mt-2 text-gray-700 dark:text-gray-300">Porsche has unveiled its latest model, showcasing innovative technology and sleek design. This new model promises to deliver exceptional performance and luxury, continuing Porsche's legacy of excellence in the automotive industry.</p>
+            </div>
+
+            <div class="bg-gray-100 dark:bg-gray-700 p-5 rounded-lg shadow-lg hover:scale-110 hover:shadow-red-500 !important transition duration-300">
+                <img src="/public/img/image copy 3.png" alt="Porsche News 1" class="w-full h-50 object-cover rounded-t-lg">
+                <h3 class="text-2xl font-bold mt-5 text-red-500 dark:text-red-500">Porsche Taycan Turbo S</h3>
+                <p class="mt-2 text-gray-700 dark:text-gray-300">The Porsche Taycan Turbo S is an all-electric sports car that combines performance and sustainability. With its advanced electric drivetrain, it delivers instant torque and acceleration, making it one of the fastest electric vehicles on the market. The Taycan Turbo S features a sleek design, luxurious interior, and cutting-edge technology, providing an unparalleled driving experience.</p>
+            </div>
+
+            <div class="bg-gray-100 dark:bg-gray-700 p-5 rounded-lg shadow-lg hover:scale-110 hover:shadow-red-500 !important transition duration-300">
+                <img src="/public/img/image copy 4.png" alt="Porsche News 1" class="w-full h-50 object-cover rounded-t-lg">
+                <h3 class="text-2xl font-bold mt-5 text-red-500 dark:text-red-500">Porsche Macan GTS</h3>
+                <p class="mt-2 text-gray-700 dark:text-gray-300">The Porsche Macan GTS is a compact luxury SUV that combines sporty performance with everyday practicality. It features a powerful engine, agile handling, and a stylish design, making it a versatile choice for those who seek both excitement and comfort in their driving experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Championship Section -->
+    <section id="championship" data-aos="zoom-in-up" class="py-16 px-6 text-center">
+        <h2 class="text-4xl font-bold text-red-500 uppercase mb-8">Porsche Championships</h2>
+        <p class="text-lg text-gray-500 dark:text-gray-300 max-w-2xl mx-auto">
+            Porsche has dominated motorsports for decades, competing in prestigious races such as Le Mans, Formula E, and IMSA. Here are some of its greatest achievements.
+        </p>
+
+        <!-- Championship Cards -->
+        <div class="mt-10 grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- Le Mans -->
+            <div class="bg-gray-200 dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                <img src="/public/img/lemans-24-hours-of-le-mans-2017-race-winners-timo-bernhard-earl-bamber-brendon-hartley-por.jpg" alt="Le Mans" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-red-500">24 Hours of Le Mans</h3>
+                    <p class="text-gray-500 dark:text-gray-200 mt-2">
+                        Porsche holds the record for most wins at Le Mans, with legendary endurance racing victories.
+                    </p>
+                    <a href="#" class="mt-4 inline-block bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 transition">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Formula E -->
+            <div class="bg-gray-200 dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                <img src="/public/img/image copy 5.png" alt="Formula E" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-red-500">Formula E</h3>
+                    <p class="text-gray-500 dark:text-gray-200 mt-2">
+                        Competing in the electric racing series, Porsche showcases its innovation in sustainable motorsports.
+                    </p>
+                    <a href="#" class="mt-4 inline-block bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 transition">Learn More</a>
+                </div>
+            </div>
+
+            <!-- IMSA GT -->
+            <div class="bg-gray-200 dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                <img src="/public/img/image copy 6.png" alt="IMSA GT" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-red-500">IMSA GT Championship</h3>
+                    <p class="text-gray-500 dark:text-gray-200 mt-2">
+                        Porsche dominates the IMSA GT series, proving its excellence in high-performance GT racing.
+                    </p>
+                    <a href="#" class="mt-4 inline-block bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 transition">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <!-- CHECKSOUND -->
+        <section data-aos="flip-down" class="relative min-h-screen flex items-center justify-center">
+            <!-- Background Video -->
+            <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay muted loop>
+                <source src="/public/video/AMAZING Drive In The GT3 RS [4K]  MY EYES - Travis Scott.mp4" type="video/mp4">
+            </video>
+        
+            <!-- Overlay Transparan -->
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        
+            <!-- Konten Audio Player -->
+            <div class="relative z-10 flex flex-col items-center justify-center min-h-screen text-white">
+                <h2 class="text-3xl font-semibold text-white mb-4 animate-bounce">Rev Your Engine</h2>
+                
+                <div class="bg-white p-4 shadow-lg rounded-lg flex items-center space-x-4 bg-opacity-80">
+                    <button id="playPause" class="bg-blue-500 text-white p-2 rounded-full">
+                        ▶️
+                    </button>
+                    <span id="currentTime" class="text-gray-600">0:00</span>
+                    <audio controls id="audio">
+                        <source src="/public/audio/Porsche GT3 RS Exhaust Sound.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="font-porsche text-black font-bold uppercase cursor-pointer">porsche 911</span>
+                </div>
+            </div>
+        </section>
+        
+        <div class="bg-red-500 p-10 text-white text-center font-semibold">Thanks For Visiting <hr class="text-black m-5"> By: kenzsw_</div>
+
+    <!-- Footer -->
+    <footer class="dark:bg-gray-900 bg-white text-black dark:text-white py-10">
+        <div class="container mx-auto px-6 md:px-12 lg:px-20">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Logo & Deskripsi -->
+                <div>
+                    <h2 class="text-2xl font-bold font-porsche uppercase cursor-pointer">porsche</h2>
+                    <p class="text-gray-600 dark:text-gray-400 mt-2">This Website is introducing about <br> <span class="font-porsche font-bold uppercase cursor-pointer hover:text-red-500 transition animate-pulse">porsche 911</span></p>
+                </div>
+    
+                <!-- Navigasi -->
+                <div>
+                    <h3 class="text-xl font-semibold">Navigasi</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="text-black dark:text-white hover:text-red-500 dark:hover:text-red-500 transition">Beranda</a></li>
+                        <li><a href="#" class="text-black dark:text-white hover:text-red-500 dark:hover:text-red-500 transition">Tentang Kami</a></li>
+                        <li><a href="#" class="text-black dark:text-white hover:text-red-500 dark:hover:text-red-500 transition">Layanan</a></li>
+                        <li><a href="#" class="text-black dark:text-white hover:text-red-500 dark:hover:text-red-500 transition">Kontak</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Newsletter -->
+                <div>
+                    <h3 class="text-xl font-semibold">Membership</h3>
+                    <p class="text-gray-400 mt-2">Dapatkan berita terbaru langsung di inbox Anda.</p>
+                    <div class="mt-4 flex">
+                        <input type="email" placeholder="Masukkan email..." class="w-full px-3 py-2 rounded-l-md focus:outline-none text-black bg-slate-300 dark:bg-gray-700 dark:text-white">
+                        <button class="bg-red-500 px-4 py-2 rounded-r-md hover:bg-red-600 transition text-white">Submit</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Copyright -->
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400 text-sm">
+                © 2025 @kenzsw_. Semua Hak Cipta Dilindungi.
+            </div>
+        </div>
+    </footer>
+    
+    
+    <!-- TOGGLE DARK MODE -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Dark Mode Toggle with Local Storage
+            const checkbox = document.querySelector("#toggle");
+            const html = document.querySelector("html");
+    
+            if (localStorage.getItem("theme") === "dark") {
+                html.classList.add("dark");
+                checkbox.checked = true;
+            }
+    
+            checkbox?.addEventListener("click", function () {
+                if (checkbox.checked) {
+                    html.classList.add("dark");
+                    localStorage.setItem("theme", "dark");
+                } else {
+                    html.classList.remove("dark");
+                    localStorage.setItem("theme", "light");
+                }
+            });
+    
+            // Burger Menu Toggle
+            const burgerBtn = document.getElementById("burger-btn");
+            const mobileMenu = document.getElementById("mobile-menu");
+    
+            burgerBtn?.addEventListener("click", () => {
+                mobileMenu?.classList.toggle("hidden");
+    
+                // Animasi Burger Button jadi "X"
+                document.getElementById("bar1")?.classList.toggle("rotate-45");
+                document.getElementById("bar1")?.classList.toggle("translate-y-2");
+    
+                document.getElementById("bar2")?.classList.toggle("hidden");
+    
+                document.getElementById("bar3")?.classList.toggle("-rotate-45");
+                document.getElementById("bar3")?.classList.toggle("-translate-y-2");
+            });
+    
+            // Audio Player
+            const audio = document.getElementById('audio');
+            const playPauseBtn = document.getElementById('playPause');
+            const currentTimeDisplay = document.getElementById('currentTime');
+    
+            if (audio && playPauseBtn && currentTimeDisplay) {
+                playPauseBtn.addEventListener('click', () => {
+                    if (audio.paused) {
+                        audio.play();
+                        playPauseBtn.textContent = "⏸️";
+                    } else {
+                        audio.pause();
+                        playPauseBtn.textContent = "▶️";
+                    }
+                });
+    
+                audio.addEventListener('timeupdate', () => {
+                    const minutes = Math.floor(audio.currentTime / 60);
+                    const seconds = Math.floor(audio.currentTime % 60);
+                    currentTimeDisplay.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+                });
+            }
+        });
+    </script>
+    
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+</body>
+</html>
